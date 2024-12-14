@@ -4,7 +4,7 @@
   "description": "Easily send a Discord webhook with Typescript syntax support",
   "author": "Toan Ho <toanbku@gmail.com>",
   "license": "MIT",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/toanbku/send-discord-webhook.git"
@@ -51,5 +51,8 @@
     "prettier": "3.2.5",
     "rimraf": "5.0.5",
     "typescript": "5.4.5"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
