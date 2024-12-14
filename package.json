@@ -4,7 +4,7 @@
   "description": "Easily send a Discord webhook with Typescript syntax support",
   "author": "Toan Ho <toanbku@gmail.com>",
   "license": "MIT",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/toanbku/send-discord-webhook.git"
@@ -40,7 +40,6 @@
     "@types/nodemon": "1.19.6",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
-    "axios": "^1.7.7",
     "dotenv": "^16.4.5",
     "dotenv-cli": "^7.4.2",
     "eslint": "8.57.0",
@@ -54,5 +53,16 @@
   },
   "files": [
     "dist"
+  ],
+  "dependencies": {
+    "axios": "^1.7.9"
+  },
+  "keywords": [
+    "discord",
+    "webhook",
+    "typescript",
+    "node",
+    "api",
+    "lightweight"
   ]
 }
