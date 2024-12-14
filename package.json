@@ -4,7 +4,15 @@
   "description": "Easily send a Discord webhook with Typescript syntax support",
   "author": "Toan Ho <toanbku@gmail.com>",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toanbku/send-discord-webhook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toanbku/send-discord-webhook/issues"
+  },
+  "homepage": "https://github.com/toanbku/send-discord-webhook#readme",
   "scripts": {
     "dev": "run-p build:watch start:watch",
     "build": "run-p build:swc build:types",

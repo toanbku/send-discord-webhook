@@ -23,4 +23,4 @@ await sendDiscordWebhook({
 
 Result:
 
-![alt text](./.github/image.png)
+![result](./image.png)
