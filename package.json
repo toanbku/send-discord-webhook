@@ -1,0 +1,47 @@
+{
+  "name": "send-discord-webhook",
+  "typings": "dist/src/index.d.ts",
+  "description": "Easily send a Discord webhook with Typescript syntax support",
+  "author": "Toan Ho <toanbku@gmail.com>",
+  "license": "MIT",
+  "version": "0.0.2",
+  "scripts": {
+    "dev": "run-p build:watch start:watch",
+    "build": "run-p build:swc build:types",
+    "build:swc": "swc src -d dist --copy-files",
+    "build:watch": "swc src -d dist --copy-files --watch",
+    "build:types": "tsc --emitDeclarationOnly",
+    "start": "dotenv -- node dist/src/index.js",
+    "start:watch": "dotenv -- nodemon dist/src/index.js",
+    "clean": "rimraf dist",
+    "format": "prettier . --write",
+    "format-check": "prettier . --check",
+    "lint": "eslint . --fix",
+    "lint-check": "eslint .",
+    "test": "glob \"src/**/*.test.ts\" \"test/**\" -c \"node --test\""
+  },
+  "exports": {
+    "default": "./dist/src/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.18",
+    "@tsconfig/node20": "20.1.4",
+    "@types/node": "20.12.7",
+    "@types/nodemon": "1.19.6",
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "@typescript-eslint/parser": "6.21.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.2",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "glob": "10.3.12",
+    "nodemon": "3.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "3.2.5",
+    "rimraf": "5.0.5",
+    "typescript": "5.4.5"
+  }
+}
