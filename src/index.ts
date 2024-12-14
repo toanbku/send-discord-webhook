@@ -15,7 +15,7 @@ type DiscordWebhookOptions = {
 
 export const sendDiscordWebhook = async (
   options: DiscordWebhookOptions
-): Promise<void> => {
+): Promise<boolean> => {
   if (!options.url) {
     throw new Error("Webhook URL is required");
   }
@@ -32,7 +32,9 @@ export const sendDiscordWebhook = async (
         },
       ],
     });
+    return true;
   } catch (error) {
     console.error("Failed to send Discord webhook:", error);
+    return false;
   }
 };
