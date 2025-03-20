@@ -32,7 +32,7 @@ type DiscordEmbed = {
 
 type AllowedMentionTypes = "roles" | "users" | "everyone";
 
-type DiscordWebhookOptions = {
+export type DiscordWebhookOptions = {
   url: string;
   username?: string;
   avatar_url?: string;
