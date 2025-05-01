@@ -95,8 +95,8 @@ export const sendDiscordWebhook = async (
   try {
     await axios.post(options.url, payload);
     return true;
-  } catch (error) {
-    console.error("Failed to send Discord webhook:", error);
+  } catch (error: any) {
+    console.error("Failed to send Discord webhook:", error.message);
     return false;
   }
 };
